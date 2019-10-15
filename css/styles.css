@@ -48,16 +48,7 @@ html {
 
   }
   
-  .column-narrow {
-    width: 30%;
-    float: left;
 
-  }
-  .column-wide {
-    width: 70%;
-    float: left;
-    padding-left: 20px;
-  }
   
   .uppercase {
     text-transform: uppercase;
@@ -152,10 +143,34 @@ html {
       rgba(141, 153, 174, 1)),
       url(../assets/montpellier.jpg) no-repeat;
 
-      background-size: 100%;
+      background-size: cover;
       
   }
   
   p + h3 {
     margin-top: 50px;
+  }
+
+/* Media Queries 
+--------------------------------------*/
+  @media (min-width:900px){
+    .column-narrow {
+      width: 30%;
+      float: left;
+  
+    }
+    .column-wide {
+      width: 70%;
+      float: left;
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: 899px){
+    header{
+      text-align: center;
+    }
+    .profile-img{
+      width: 200px;
+    }
   }
