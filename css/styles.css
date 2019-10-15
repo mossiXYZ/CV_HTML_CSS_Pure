@@ -147,7 +147,13 @@ html {
   /* Education
   ------------------------------------*/
   .education {
-      background: #8D99AE;
+      /* background: #8D99AE; */
+      background: linear-gradient(rgba(141, 153, 174, 0.7),
+      rgba(141, 153, 174, 1)),
+      url(../assets/montpellier.jpg) no-repeat;
+
+      background-size: 100%;
+      
   }
   
   p + h3 {
